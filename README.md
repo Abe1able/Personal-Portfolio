@@ -27,12 +27,6 @@ Clone the repository and open the index.html file.
 
 Install all the dependencies by running the command npm -i
 
-### Usage
-
-### Run tests
-
-### Deployment
-
 
 ## Authors
 
@@ -46,6 +40,7 @@ Install all the dependencies by running the command npm -i
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
+Feel free to check the [issues page](https://github.com/Abe1able/Personal-Portfolio/issues)
 
 
 ## Show your support
