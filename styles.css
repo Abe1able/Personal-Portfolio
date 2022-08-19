@@ -6,8 +6,26 @@ body {
 main {
   background: #f7f7f9;
   padding-top: 75px;
-  padding-left: 10px;
-  padding-right: 10px;
+}
+
+button:enabled {
+  background: none;
+  color: #396df2;
+}
+
+button:hover {
+  background: #5161f1;
+  color: white;
+}
+
+button:active {
+  background: #081dda;
+  color: white;
+}
+
+button:disabled {
+  background: #ebebff;
+  color: black;
 }
 
 .header {
@@ -18,7 +36,6 @@ main {
   align-items: center;
   padding: 30px 24px;
   background-color: #fff;
-  box-shadow: 0 2px 6px 0 rgb(0 0 0 / 5%), 0 2px 15px 0 rgb(0 0 0 / 15%);
 }
 
 .header-logo {
@@ -29,6 +46,10 @@ main {
   color: #5161f1;
   text-decoration: none;
   transition: transform 1s;
+}
+
+.hamburger-btn {
+  border: none;
 }
 
 .header-logo:hover {
@@ -58,21 +79,38 @@ nav ul {
 
 .headline {
   color: #172b4d;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
 }
 
 .headline-text {
+  font-weight: normal;
+  font-style: normal;
+  font-size: 16px;
+  margin-top: -20px;
   color: #344563;
-}
-
-.fa {
-  color: #505f79;
+  line-height: 24px;
 }
 
 #headline-section {
-  background: url("header-shapes-mobile@2x.svg");
+  background: url("./Images/header-shapes-mobile@2x.svg");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 100px 25px;
   background-color: #fff;
   border-bottom-left-radius: 80px;
+}
+
+.social-media-icons ul {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 0;
+  padding-right: 14px;
+  align-items: center;
+}
+
+.social-media-icons li {
+  list-style: none;
+  padding-right: 20px;
 }
