@@ -1,0 +1,125 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+}
+
+main {
+  background: #f7f7f9;
+  padding-top: 75px;
+}
+
+button:enabled {
+  background: none;
+  color: #396df2;
+}
+
+button:hover {
+  background: #5161f1;
+  color: white;
+}
+
+button:active {
+  background: #081dda;
+  color: white;
+}
+
+button:disabled {
+  background: #ebebff;
+  color: black;
+}
+
+.header {
+  position: fixed;
+  width: 90vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 24px;
+  background-color: #fff;
+}
+
+.header-logo {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  color: #5161f1;
+  text-decoration: none;
+  transition: transform 1s;
+}
+
+.hamburger-btn {
+  border: none;
+}
+
+.header-logo:hover {
+  transform: scale(1.7);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #1d2fd5;
+  transition: 200ms ease-in-out;
+  transform: scale(0);
+  z-index: 10;
+}
+
+.connect {
+  color: #7f8cff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.headline {
+  color: #172b4d;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+}
+
+.headline-text {
+  font-weight: normal;
+  font-style: normal;
+  font-size: 16px;
+  margin-top: -20px;
+  color: #344563;
+  line-height: 24px;
+}
+
+#headline-section {
+  background: url("./Images/header-shapes-mobile@2x.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 25px;
+  background-color: #fff;
+  border-bottom-left-radius: 80px;
+}
+
+.social-media-icons ul {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 0;
+  padding-right: 14px;
+  align-items: center;
+}
+
+.social-media-icons li {
+  list-style: none;
+  padding-right: 20px;
+}
+
+/* h2 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+} */
