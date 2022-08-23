@@ -337,13 +337,12 @@ nav ul {
   padding: 9px 16px 9px 2px;
 }
 
-
 #contact-form {
   display: flex;
   flex-direction: column;
   background: url("./Images/contact-form-shapes-mobile.svg");
   background-repeat: no-repeat;
-  background-position: 22vmax; 
+  background-position: 22vmax;
   background-color: #5161f1;
   background-size: 58%;
   padding: 60px 50px;
