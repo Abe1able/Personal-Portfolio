@@ -35,6 +35,12 @@ Install all the dependencies by running the command npm -i
 
 - GitHub: [@abe1able](https://github.com/abe1able)
 
+## contributor
+
+- GitHub: [@Irirwanirira](https://github.com/Irirwanirira)
+- Twitter: [@Iri_joseph](https://twitter.com/Irirwanirira)
+- LinkedIn: [Joseph IRIRWANIRIRA](https://linkedin.com/in/joseph-irirwanirira-74666623a/)
+
 
 
 ## 🤝 Contributing
