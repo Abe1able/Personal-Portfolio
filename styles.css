@@ -33,7 +33,7 @@ button:disabled {
 
 .header {
   position: fixed;
-  width: 90vw;
+  width: 95vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -76,6 +76,110 @@ nav ul {
   z-index: 10;
 }
 
+.menu-bar {
+  list-style: none;
+  color: #fff;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  justify-content: space-between;
+}
+
+.project-detail-article {
+  margin: 80px 30px;
+}
+
+.project-detail {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  transition: 200ms ease-in-out;
+  transform: scale(0);
+  z-index: 10;
+}
+
+.project-detail-background {
+  position: absolute;
+  background-color: #446089;
+  opacity: 0.8;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.project-detail.active {
+  transform: scale(1);
+}
+
+.mobile-menu.active {
+  transform: scale(1);
+}
+
+.mobile-menu-header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.mobile-menu ul {
+  list-style: none;
+  color: #fff;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 53px;
+}
+
+.mobile-menu-list a {
+  color: white;
+  text-decoration: none;
+}
+
+.close-button-project {
+  border: none;
+  cursor: pointer;
+  outline: none;
+  background: none;
+  font-size: 2.25rem;
+  font-weight: lighter;
+}
+
+.close-button-project:enabled {
+  color: black;
+}
+
+.close-button {
+  border: none;
+  cursor: pointer;
+  outline: none;
+  background: none;
+  font-size: 2.25rem;
+  font-weight: bold;
+  padding: 30px;
+}
+
+.close-button:enabled {
+  color: white;
+}
+
+.only-menu {
+  display: none;
+}
+
+.only-mobile {
+  display: block;
+}
+
+.only-desktop {
+  display: none;
+}
+
 .connect {
   color: #7f8cff;
   font-size: 16px;
@@ -108,6 +212,10 @@ nav ul {
   border-bottom-left-radius: 80px;
 }
 
+nav ul li {
+  padding: 0 30px;
+}
+
 .social-media-icons ul {
   display: flex;
   justify-content: flex-start;
@@ -121,11 +229,6 @@ nav ul {
   padding-right: 20px;
 }
 
-/* h2 {
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 24px;
-} */
 .flex {
   display: flex;
   flex-direction: column;
@@ -429,4 +532,250 @@ form textarea {
 #contact-form form button:disabled {
   background: #ebebff;
   color: black;
+}
+
+@media screen and (min-width: 576px) {
+  #work-section {
+    padding: 50px 120px;
+  }
+
+  .work-img {
+    background-repeat: no-repeat;
+    height: 330px;
+    box-shadow: none;
+  }
+
+  .project-detail-article {
+    margin: 70px 120px;
+  }
+}
+
+@media screen and (min-width: 995px) {
+  header {
+    display: flex;
+    padding: 10px 70px;
+    align-items: center;
+    background-color: #fff;
+  }
+
+  #headline-section {
+    background: url("../Images/Header-bg@2x.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 70vh;
+    padding: 160px 150px 90px 130px;
+    text-align: left;
+    border-bottom-left-radius: 20%;
+    background-color: #fff;
+  }
+
+  #contact-form {
+    background: url("./Images/contact-form-desktop-bg-shapes@2x.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #5161f1;
+    padding: 90px 150px;
+    border-top-left-radius: 20%;
+  }
+
+  .only-mobile {
+    display: none;
+  }
+
+  .only-desktop {
+    display: block;
+  }
+
+  .menu-bar {
+    display: flex;
+  }
+
+  .menu-bar li a {
+    text-decoration: none;
+  }
+
+  .footer {
+    display: none;
+  }
+
+  #work-section {
+    padding: 50px 180px;
+  }
+
+  .work-container {
+    height: auto;
+    margin: 50px;
+  }
+
+  .work-img {
+    background-repeat: no-repeat;
+    width: 50%;
+    display: flex;
+    border-radius: 8px;
+    transition: transform 1s;
+  }
+
+  .img-one {
+    background: url("./Images/Portfolio.png");
+    background-size: cover;
+  }
+
+  .img-two {
+    background: url("./Images/Portfolio2.png");
+    background-size: cover;
+  }
+
+  .img-three {
+    background: url("./Images/Portfolio3.png");
+    background-size: cover;
+  }
+
+  .img-four {
+    background: url("./Images/Portfolio4.png");
+    background-size: cover;
+  }
+
+  .work-img:hover {
+    transform: scale(1.04);
+  }
+
+  .work-description {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 20px;
+  }
+
+  .flex {
+    flex-direction: row;
+  }
+
+  .project-flex {
+    flex-direction: column;
+  }
+
+  .row-reverse {
+    flex-direction: row-reverse;
+  }
+
+  .about-section-text {
+    padding: 10px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 0.5;
+  }
+
+  .about-section-skill {
+    padding-right: 30px;
+    flex: 0.5;
+  }
+
+  .about-lang-skills {
+    display: flex;
+    gap: 10px;
+  }
+
+  .about-lang-skills li button {
+    display: flex;
+    flex-direction: column;
+    height: 110px;
+    gap: 10px;
+  }
+
+  #contact-form p {
+    max-width: 450px;
+  }
+
+  .form {
+    width: 450px;
+  }
+
+  .project-detail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+
+  .project-detail-article {
+    height: 85vh;
+    width: 50vw;
+  }
+
+  .project-detail-work-description,
+  .project-detail-buttons {
+    display: flex;
+  }
+
+  .project-detail-work-description {
+    font-size: 15px;
+    padding-top: 20px;
+    line-height: 30px;
+  }
+
+  .project-detail-tech-btns {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+  }
+
+  .project-detail-buttons li {
+    margin-right: 15px;
+  }
+}
+
+.fixed_postion {
+  position: fixed;
+  filter: blur(8px);
+}
+
+.hide {
+  display: none;
+}
+
+.fixed_headline {
+  position: fixed;
+  filter: blur(12px);
+}
+
+.see-source {
+  display: flex;
+  width: 135px;
+  margin-right: 20px;
+}
+
+.see-source-img {
+  padding-left: 15px;
+}
+
+.project-detail-work-description {
+  font-size: 14px;
+}
+
+.project-detail-buttons li {
+  margin-right: 10px;
+}
+
+.project-detail-buttons {
+  display: flex;
+}
+
+.project-detail-buttons a {
+  text-decoration: none;
+}
+
+.project-detail-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+form small {
+  color: red;
+  font-size: 15px;
 }
