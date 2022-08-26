@@ -534,23 +534,7 @@ form textarea {
   color: black;
 }
 
-@media screen and (min-width: 576px) {
-  #work-section {
-    padding: 50px 120px;
-  }
-
-  .work-img {
-    background-repeat: no-repeat;
-    height: 330px;
-    box-shadow: none;
-  }
-
-  .project-detail-article {
-    margin: 70px 120px;
-  }
-}
-
-@media screen and (min-width: 995px) {
+@media screen and (min-width: 768px) {
   header {
     display: flex;
     padding: 10px 70px;
@@ -567,6 +551,11 @@ form textarea {
     text-align: left;
     border-bottom-left-radius: 20%;
     background-color: #fff;
+  }
+
+  .header-logo {
+    position: relative;
+    left: 143px;
   }
 
   #contact-form {
@@ -588,10 +577,12 @@ form textarea {
 
   .menu-bar {
     display: flex;
+    gap: 8px;
   }
 
   .menu-bar li a {
     text-decoration: none;
+    color: #344563;
   }
 
   .footer {
@@ -599,6 +590,7 @@ form textarea {
   }
 
   #work-section {
+    display: grid;
     padding: 50px 180px;
   }
 
@@ -610,6 +602,7 @@ form textarea {
   .work-img {
     background-repeat: no-repeat;
     width: 50%;
+    height: 100%;
     display: flex;
     border-radius: 8px;
     transition: transform 1s;
