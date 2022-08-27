@@ -51,12 +51,12 @@ button:disabled {
   transition: transform 1s;
 }
 
-.hamburger-btn {
-  border: none;
+.header-logo:hover {
+  transform: rotate(100deg);
 }
 
-.header-logo:hover {
-  transform: scale(1.7);
+.hamburger-btn {
+  border: none;
 }
 
 nav ul {
