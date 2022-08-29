@@ -29,7 +29,7 @@ Install all the dependencies by running the command npm -i
 
 ## Live Demo (if available)
 
-https://abe1able.github.io/Personal-Portfolio/
+[Demo] (https://abe1able.github.io/Personal-Portfolio/)
 
 ## Authors
 
