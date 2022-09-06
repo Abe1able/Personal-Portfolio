@@ -37,8 +37,9 @@ button:disabled {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 24px;
+  padding: 13px 24px;
   background-color: #fff;
+  box-shadow: 0 2px 6px 0 rgb(0 0 0 / 5%), 0 2px 15px 0 rgb(0 0 0 / 15%);
 }
 
 .header-logo {
@@ -543,7 +544,7 @@ form textarea {
   }
 
   #headline-section {
-    background: url("../Images/Header-bg@2x.svg");
+    background: url("./Images/Header-bg@2x.svg");
     background-repeat: no-repeat;
     background-size: contain;
     height: 70vh;
@@ -771,4 +772,80 @@ form textarea {
 form small {
   color: red;
   font-size: 15px;
+}
+
+.navbar {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
+.nav-menu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap:60px;
+}
+.nav-link{
+  transition: 0.7s ease;
+}
+.hamburger{
+  display: none;
+  cursor: pointer;
+}
+.bar{
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #6070ff;
+}
+@media(max-width:768px){
+  .hamburger{
+    display: block;
+  }
+  .nav-link {
+    color: #fff;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+    text-decoration: none;
+  }
+  .hamburger.active .bar:nth-child(2){
+    opacity:0;
+  }
+  .hamburger.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+    background-color: #fff;
+  }
+  .hamburger.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+    background-color: #fff;
+  }
+  .nav-menu{
+    position: fixed;
+    left:100%;
+    padding-top: 0;
+    align-items: flex-start;
+    justify-content: flex-start;
+    top: 0;
+    gap: 0;
+    flex-direction: column;
+    width:100%;
+    text-align:center;
+    transition:0.3s;
+    background-color: rgba(96, 112, 255, 0.8);
+    mix-blend-mode: multiply;
+    backdrop-filter: blur(20px);
+    height: 40rem;
+  }
+  .nav-item{
+    margin:16px 0;
+  }
+  .nav-menu.active{
+    left: -20px;;
+  }
 }
