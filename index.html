@@ -15,18 +15,17 @@
   <body>
     <header class="header">
       <a href="#headline-section" class="header-logo">My Logo</a>
-      <nav>
-        <button 
-          class="only-mobile hamburger-btn"
-          data-mobile-menu-target="#mobile-menu"
-        >
-          <img src="Union.svg" alt="Hamburger Navbar Icon" />
-        </button>
-        <ul class="only-desktop menu-bar">
-          <li><a href="#work-section">Portfolio</a></li>
-          <li><a href="#about-section">About</a></li>
-          <li><a href="#contact-form">Contact</a></li>
+      <nav class="navbar">
+        <ul class="only-desktop menu-bar nav-menu">
+          <li class="nav-item"><a class="nav-link" href="#work-section">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about-section">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact-form">Contact</a></li>
         </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
       </nav>
     </header>
     <div class="mobile-menu" id="mobile-menu">
@@ -349,5 +348,6 @@
         </form>
       </section>
     </main>
+    <script defer src="script.js"></script>
   </body>
 </html>

@@ -27,9 +27,9 @@ Clone the repository and open the index.html file.
 
 Install all the dependencies by running the command npm -i
 
-## Live Demo (if available)
+## Live Demo 
 
-[Demo] (https://abe1able.github.io/Personal-Portfolio/)
+[Demo](https://abe1able.github.io/Personal-Portfolio/)
 
 ## Authors
 
