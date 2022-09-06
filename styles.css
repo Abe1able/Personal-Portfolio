@@ -841,7 +841,7 @@ form small {
     padding-top: 106px;
     align-items: flex-start;
     justify-content: flex-start;
-    top: 0;
+    top: -20px;
     gap: 0;
     flex-direction: column;
     width: 100%;
