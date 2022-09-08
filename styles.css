@@ -861,3 +861,58 @@ form small {
     left: -20px;
   }
 }
+
+/* Pop up window styling */
+.fixed_postion {
+  position: fixed;
+  filter: blur(8px);
+}
+
+.hide {
+  display: none;
+}
+
+.fixed_headline {
+  position: fixed;
+  filter: blur(12px);
+}
+
+.see-source {
+  display: flex;
+  width: 135px;
+  margin-right: 20px;
+}
+
+.see-source-img {
+  padding-left: 15px;
+}
+
+.project-detail-work-description {
+  font-size: 14px;
+}
+
+.project-detail-buttons li {
+  margin-right: 10px;
+}
+
+.project-detail-buttons {
+  display: flex;
+}
+
+.project-detail-buttons a {
+  text-decoration: none;
+}
+
+.project-detail-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hamburger-btn {
+  border: none;
+}
+
+form small {
+  color: red;
+  font-size: 15px;
+}
