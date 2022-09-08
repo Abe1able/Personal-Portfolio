@@ -50,3 +50,59 @@ const projects = [
   },
 ];
 
+seeProjectDetail.forEach((button) => {
+  button.addEventListener('click', (e) => {
+    const selectedProject = projects.filter((project) => project.id === e.target.id)[0];
+    projectDetail.classList.add('active');
+    mainTag.classList.add('fixed_postion');
+    header.classList.add('fixed_postion');
+    projectDetail.innerHTML = `
+        <div class="project-detail-background"></div>
+        <article class="work-container flex project-detail-article project-flex">
+            <div class="project-detail-header">
+              <h3>${selectedProject.name}</h3>
+              <button data-close-button class="close-button-project">&times;</button>
+           </div>
+           <div class="client-des">
+              <ul class="client-name">
+                <li>${selectedProject.name_detail[0]}</li>
+              </ul>
+              <ul>
+                <li>${selectedProject.name_detail[1]}</li>
+              </ul>
+              <ul>
+                <li>${selectedProject.name_detail[2]}</li>
+              </ul>
+            </div>
+          <div class="work-img" style="background: url(${selectedProject.featured_image});
+          background-size: cover; width: auto"></div>
+          <div class="work-description-project project-detail-work-description">
+            <p>
+              ${selectedProject.description}
+            </p>
+            <div class="project-detail-tech-btns">
+            <ul class="buttons project-detail-buttons">
+              <li><button type="button">${selectedProject.technologies[0]}</button></li>
+              <li><button type="button">${selectedProject.technologies[1]}</button></li>
+              <li><button type="button">${selectedProject.technologies[2]}</button></li>
+            </ul>
+            <div class="project-detail-buttons">
+                <a href="${selectedProject.link_to_live[2]}"><button class="see-project-btn see-source">${selectedProject.link_to_live[0]}
+                  <img class="see-source-img" src=${selectedProject.link_to_live[1]} alt="" /></button>
+                </a>
+                <a href="${selectedProject.link_to_source[2]}"><button class="see-project-btn see-source">${selectedProject.link_to_source[0]}
+                  <img class="see-source-img" src=${selectedProject.link_to_source[1]} alt="" /></button>
+                </a>
+            </div>
+            </div>
+          </div>
+        </article>
+        `;
+    const projectDetailClose = document.querySelector('.close-button-project');
+    projectDetailClose.addEventListener('click', () => {
+      mainTag.classList.remove('fixed_postion');
+      header.classList.remove('fixed_postion');
+      projectDetail.classList.remove('active');
+    });
+  });
+});
