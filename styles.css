@@ -879,8 +879,9 @@ form small {
 
 .see-source {
   display: flex;
-  width: 135px;
+  width: 90%;
   margin-right: 20px;
+  justify-content: space-between;
 }
 
 .see-source-img {
@@ -888,7 +889,12 @@ form small {
 }
 
 .project-detail-work-description {
-  font-size: 14px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 30px;
+  color: #344563;
 }
 
 .project-detail-buttons li {
@@ -906,6 +912,15 @@ form small {
 .project-detail-header {
   display: flex;
   justify-content: space-between;
+  color: #091E42;
+}
+
+.project-detail-article {
+  margin-bottom: 10%;
+}
+
+.project-detail-background {
+  margin-bottom: 50px;
 }
 
 .hamburger-btn {

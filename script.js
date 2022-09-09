@@ -74,18 +74,18 @@ const projects = [
   {
     id: '1',
     name: 'Tonic',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    featured_image: './Images/Portfolio.png',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea.',
+    featured_image: './Images/Snapshoot.png',
     link_to_live: ['See live', './Images/detailProjectLive.png', '#'],
     link_to_source: ['See source', './Images/detailProjectGit.png', '#'],
-    technologies: ['html', 'css', 'javascript'],
-    name_detail: ['Abel Seifu', 'Back-End Dev', '2022'],
+    technologies: ['html', 'css', 'javascript', 'react', 'redux', 'github'],
+    name_detail: ['Canopy', 'Back-End Dev', '2015'],
   },
   {
     id: '2',
     name: 'Multi-post Stories',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    featured_image: './Images/Portfolio2.png',
+    featured_image: './Images/Snapshoot.png',
     link_to_live: ['See live', './Images/detailProjectLive.png', '#'],
     link_to_source: ['See source', './Images/detailProjectGit.png', '#'],
     technologies: ['html', 'css', 'javascript'],
@@ -95,7 +95,7 @@ const projects = [
     id: '3',
     name: 'Tonic 3',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    featured_image: './Images/Portfolio3.png',
+    featured_image: './Images/Snapshoot.png',
     link_to_live: ['See live', './Images/detailProjectLive.png', '#'],
     link_to_source: ['See source', './Images/detailProjectGit.png', '#'],
     technologies: ['html', 'css', 'javascript'],
@@ -105,7 +105,7 @@ const projects = [
     id: '4',
     name: 'Tonic 4',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    featured_image: './Images/Portfolio4.png',
+    featured_image: './Images/Snapshoot.png',
     link_to_live: ['See live', './Images/detailProjectLive.png', '#'],
     link_to_source: ['See source', './Images/detailProjectGit.png', '#'],
     technologies: ['html', 'css', 'javaScript', 'Git', 'Webpack'],
@@ -148,6 +148,9 @@ seeProjectDetail.forEach((button) => {
               <li><button type="button">${selectedProject.technologies[0]}</button></li>
               <li><button type="button">${selectedProject.technologies[1]}</button></li>
               <li><button type="button">${selectedProject.technologies[2]}</button></li>
+              <li><button type="button">${selectedProject.technologies[3]}</button></li>
+              <li><button type="button">${selectedProject.technologies[4]}</button></li>
+              <li><button type="button">${selectedProject.technologies[5]}</button></li>
             </ul>
             <div class="project-detail-buttons">
                 <a href="${selectedProject.link_to_live[2]}"><button class="see-project-btn see-source">${selectedProject.link_to_live[0]}
