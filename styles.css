@@ -88,7 +88,7 @@ nav ul {
 }
 
 .project-detail-article {
-  margin: 80px 30px;
+  margin: 30px 30px;
 }
 
 .project-detail {
@@ -700,6 +700,7 @@ form textarea {
   .project-detail-article {
     height: 85vh;
     width: 50vw;
+    margin-bottom: 5%;
   }
 
   .project-detail-work-description,
@@ -749,7 +750,11 @@ form textarea {
 }
 
 .project-detail-work-description {
-  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 30px;
+  color: #344563;
 }
 
 .project-detail-buttons li {
@@ -767,6 +772,7 @@ form textarea {
 .project-detail-header {
   display: flex;
   justify-content: space-between;
+  color: #091e42;
 }
 
 form small {
@@ -862,72 +868,3 @@ form small {
   }
 }
 
-/* Pop up window styling */
-.fixed_postion {
-  position: fixed;
-  filter: blur(8px);
-}
-
-.hide {
-  display: none;
-}
-
-.fixed_headline {
-  position: fixed;
-  filter: blur(12px);
-}
-
-.see-source {
-  display: flex;
-  width: 90%;
-  margin-right: 20px;
-  justify-content: space-between;
-}
-
-.see-source-img {
-  padding-left: 15px;
-}
-
-.project-detail-work-description {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 10px;
-  line-height: 30px;
-  color: #344563;
-}
-
-.project-detail-buttons li {
-  margin-right: 10px;
-}
-
-.project-detail-buttons {
-  display: flex;
-}
-
-.project-detail-buttons a {
-  text-decoration: none;
-}
-
-.project-detail-header {
-  display: flex;
-  justify-content: space-between;
-  color: #091E42;
-}
-
-.project-detail-article {
-  margin-bottom: 10%;
-}
-
-.project-detail-background {
-  margin-bottom: 50px;
-}
-
-.hamburger-btn {
-  border: none;
-}
-
-form small {
-  color: red;
-  font-size: 15px;
-}

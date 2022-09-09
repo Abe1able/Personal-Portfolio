@@ -63,10 +63,6 @@ function showMessage(input, message, type) {
 
 const mainTag = document.querySelector('.main');
 const header = document.querySelector('.header');
-const menuContainer = document.querySelector('.mobile-menu-list');
-const humburgerButton = document.querySelector('.hamburger-btn');
-const showMobileMenu = document.querySelector('.mobile-menu');
-
 const seeProjectDetail = document.querySelectorAll('.see-project-btn');
 const projectDetail = document.querySelector('.project-detail');
 
@@ -74,11 +70,11 @@ const projects = [
   {
     id: '1',
     name: 'Tonic',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea.',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.',
     featured_image: './Images/Snapshoot.png',
     link_to_live: ['See live', './Images/detailProjectLive.png', '#'],
     link_to_source: ['See source', './Images/detailProjectGit.png', '#'],
-    technologies: ['html', 'css', 'javascript', 'react', 'redux', 'github'],
+    technologies: ['html', 'css', 'javascript', 'react'],
     name_detail: ['Canopy', 'Back-End Dev', '2015'],
   },
   {
@@ -149,8 +145,6 @@ seeProjectDetail.forEach((button) => {
               <li><button type="button">${selectedProject.technologies[1]}</button></li>
               <li><button type="button">${selectedProject.technologies[2]}</button></li>
               <li><button type="button">${selectedProject.technologies[3]}</button></li>
-              <li><button type="button">${selectedProject.technologies[4]}</button></li>
-              <li><button type="button">${selectedProject.technologies[5]}</button></li>
             </ul>
             <div class="project-detail-buttons">
                 <a href="${selectedProject.link_to_live[2]}"><button class="see-project-btn see-source">${selectedProject.link_to_live[0]}
