@@ -170,7 +170,7 @@ const fullNameForm = document.getElementById('fullName');
 const emailForm = document.getElementById('email');
 const commentForm = document.getElementById('comment');
 
-function handleChange() {
+function handleChange{} {
   const formData = {
     fullName: fullNameForm.value,
     email: emailForm.value,
